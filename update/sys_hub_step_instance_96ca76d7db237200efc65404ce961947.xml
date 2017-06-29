@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <record_update table="sys_hub_step_instance">
     <sys_hub_step_instance action="INSERT_OR_UPDATE">
-        <action display_value="Get CIs by Group Name">af8962d7dbef3200efc65404ce96196a</action>
+        <action display_value="Get CIs by Group Name">8aca36d7db237200efc65404ce9619fa</action>
         <cid>074c8e10-1ec5-49a5-935e-c011c912c09b</cid>
         <extended_inputs/>
         <extended_inputs/>
@@ -14,29 +14,29 @@
         <step_type display_value="Script">106afb6647032200b4fad7527c9a71e7</step_type>
         <sys_class_name>sys_hub_step_instance</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2017-06-29 20:26:22</sys_created_on>
-        <sys_id>e93aead7dbef3200efc65404ce961986</sys_id>
-        <sys_mod_count>15</sys_mod_count>
+        <sys_created_on>2017-06-29 21:38:46</sys_created_on>
+        <sys_id>96ca76d7db237200efc65404ce961947</sys_id>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name>Script step </sys_name>
         <sys_package display_value="CMDB" source="x_cmdb">35a76297dbef3200efc65404ce961971</sys_package>
         <sys_policy/>
         <sys_scope display_value="CMDB">35a76297dbef3200efc65404ce961971</sys_scope>
-        <sys_update_name>sys_hub_step_instance_e93aead7dbef3200efc65404ce961986</sys_update_name>
+        <sys_update_name>sys_hub_step_instance_96ca76d7db237200efc65404ce961947</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2017-06-29 22:02:18</sys_updated_on>
+        <sys_updated_on>2017-06-29 21:38:47</sys_updated_on>
     </sys_hub_step_instance>
-    <sys_variable_value action="delete_multiple" query="document_key=e93aead7dbef3200efc65404ce961986"/>
+    <sys_variable_value action="delete_multiple" query="document_key=96ca76d7db237200efc65404ce961947"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>sys_hub_step_instance</document>
-        <document_key>e93aead7dbef3200efc65404ce961986</document_key>
+        <document_key>96ca76d7db237200efc65404ce961947</document_key>
         <order>200</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2017-06-29 20:26:23</sys_created_on>
-        <sys_id>8e3aead7dbef3200efc65404ce9619c4</sys_id>
-        <sys_mod_count>12</sys_mod_count>
+        <sys_created_on>2017-06-29 21:38:47</sys_created_on>
+        <sys_id>2aca76d7db237200efc65404ce96198b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2017-06-29 22:02:18</sys_updated_on>
+        <sys_updated_on>2017-06-29 21:38:47</sys_updated_on>
         <value>(function execute(inputs, outputs) {
     var group_id;
 
@@ -51,8 +51,8 @@
   	var output = sn_cmdbgroup.CMDBGroupAPI.getAllCI(group_id);
 
    	gs.info ("Encoded Server List: " + output);
-	var jsonUtil = new global.JSON();
-	var result = jsonUtil.decode(output);
+	//var jsonUtil = new JSON();
+	//var result = jsonUtil.decode(output);
 	outputs.servers = result.idList; //removes leading and ending meta-data and returns just the array
 	gs.info ("Decoded Server List: " + outputs.servers);
   
@@ -60,42 +60,28 @@
 </value>
         <variable display_value="">71aa7f6647032200b4fad7527c9a719b</variable>
     </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>sys_hub_step_instance</document>
-        <document_key>e93aead7dbef3200efc65404ce961986</document_key>
-        <order>0</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2017-06-29 20:26:23</sys_created_on>
-        <sys_id>8e3aead7dbef3200efc65404ce9619c5</sys_id>
-        <sys_mod_count>1</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2017-06-29 20:26:46</sys_updated_on>
-        <value/>
-        <variable display_value="">2d3aead7dbef3200efc65404ce96198a</variable>
-    </sys_variable_value>
-    <sys_element_mapping action="delete_multiple" query="id=e93aead7dbef3200efc65404ce961986"/>
+    <sys_element_mapping action="delete_multiple" query="id=96ca76d7db237200efc65404ce961947"/>
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>cmdb_groupname</field>
-        <id>e93aead7dbef3200efc65404ce961986</id>
+        <id>96ca76d7db237200efc65404ce961947</id>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2017-06-29 20:26:23</sys_created_on>
-        <sys_id>0e3aead7dbef3200efc65404ce9619c5</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_created_on>2017-06-29 21:38:47</sys_created_on>
+        <sys_id>a2ca76d7db237200efc65404ce96198c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2017-06-29 20:27:06</sys_updated_on>
-        <table>var__m_sys_hub_step_ext_input_e93aead7dbef3200efc65404ce961986</table>
+        <sys_updated_on>2017-06-29 21:38:47</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_96ca76d7db237200efc65404ce961947</table>
         <value>{{action.Group_Name}}</value>
     </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>script</field>
-        <id>e93aead7dbef3200efc65404ce961986</id>
+        <id>96ca76d7db237200efc65404ce961947</id>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2017-06-29 20:26:23</sys_created_on>
-        <sys_id>0a3aead7dbef3200efc65404ce9619c4</sys_id>
+        <sys_created_on>2017-06-29 21:38:47</sys_created_on>
+        <sys_id>a6ca76d7db237200efc65404ce96198b</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2017-06-29 20:26:23</sys_updated_on>
+        <sys_updated_on>2017-06-29 21:38:47</sys_updated_on>
         <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
         <value/>
     </sys_element_mapping>
